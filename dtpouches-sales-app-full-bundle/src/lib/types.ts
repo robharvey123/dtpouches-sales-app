@@ -23,6 +23,27 @@ export type StandardSalesRow = {
   sales_rep?: string;
   notes?: string;
 
-  // 👇 add this line
+  // set automatically in actions.ts
   source_system?: string;
 };
+
+// 👇 add (or replace with) this exact export
+export const STANDARD_FIELDS = [
+  "invoice_date",
+  "invoice_number",
+  "customer_name",
+  "customer_code",
+  "brand",
+  "product_sku",
+  "product_name",
+  "units",
+  "net_value",
+  "currency",
+  "channel",
+  "region",
+  "sales_rep",
+  "notes",
+  "source_system"
+] as const;
+
+export type StandardField = typeof STANDARD_FIELDS[number];
