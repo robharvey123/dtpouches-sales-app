@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useMemo, useState } from 'react';
 import Papa from 'papaparse';
-import { STANDARD_FIELDS } from '@/src/lib/types';
+import { STANDARD_FIELDS } from '../../lib/types';
 import { getMapping, saveMapping, ingestRows } from './actions';
 
 export default function UploadPage() {
