@@ -1,8 +1,8 @@
 'use server';
 
 import { createClient } from '@supabase/supabase-js';
-import { STANDARD_FIELDS, StandardSalesRow } from '@/src/lib/types';
-import { validateRow } from '@/src/lib/validation';
+import { STANDARD_FIELDS, StandardSalesRow } from '../../lib/types';
+import { validateRow } from '../../lib/validation';
 
 function supabaseServer() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL!;
