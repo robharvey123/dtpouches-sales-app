@@ -1,4 +1,4 @@
-import { KPI } from '@/src/components/KPI';
+import { KPI } from '../../components/KPI';
 
 export default function DashboardPage() {
   return (
