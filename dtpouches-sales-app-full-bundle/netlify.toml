@@ -2,14 +2,11 @@
   command = "npm run build"
   publish = ".next"
 
-# Set runtime versions (keeps Netlify consistent with Next 14)
 [build.environment]
   NODE_VERSION = "18"
   NEXT_TELEMETRY_DISABLED = "1"
-
-  # ←—— Replace these two with your real values ———>
   NEXT_PUBLIC_SUPABASE_URL = "https://zrmhkcfdbyeubgyydfqr.supabase.co"
-  NEXT_PUBLIC_SUPABASE_ANON_KEY = "sb_publishable_WowIqy5-TByekVZ8lYkmuQ_JKrUHUKp"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpybWhrY2ZkYnlldWJneXlkZnFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ2NTA5NjgsImV4cCI6MjA3MDIyNjk2OH0.1i36sNRyRAvJIDiWqcnmfysdDVCe_HGKqqsh-EoKTko"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
